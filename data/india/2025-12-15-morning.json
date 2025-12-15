@@ -4,22 +4,22 @@
     "region": "india",
     "date": "2025-12-15",
     "period": "morning",
-    "generated_at": "2025-12-15T05:36:39Z",
+    "generated_at": "2025-12-15T07:00:42Z",
     "version": "1.0",
     "articles": [
       {
-        "title": "Delhi-NCR AQI hits 481, offices ordered 50% staff",
-        "summary": "Delhi's air quality deteriorated to AQI 481 early Monday, with Noida at 557 and Greater Noida at 422, turning the region into a gas chamber. Authorities mandated 50% staff attendance in offices amid severe pollution. Schools shifted to hybrid mode due to hazardous conditions.",
-        "category": "environment",
+        "title": "CBI Busts Transnational Cyber Fraud Network, Files Chargesheet Against 17",
+        "summary": "The Central Bureau of Investigation dismantled a transnational cyber fraud network operating across multiple countries. A chargesheet was filed against 17 accused involved in large-scale scams. The operation was reported in breaking news updates early Monday.",
+        "category": "politics",
         "source": {
-          "name": "News24online.com",
-          "url": "https://news24online.com/india/live-update-today-latest-news-breaking-delhi-ncr-aqi-school-holiday-sydney-bondi-beach-terror-attack-australia-parliament-winter-session-jaishankar-pm-modi-nitin-nabin-up-manipur-violence/687705/"
+          "name": "Timesofindia.indiatimes.com",
+          "url": "https://timesofindia.indiatimes.com/india/breaking-news-live-updates-15-december-2025/liveblog/125964562.cms"
         },
         "citations": [
           {
             "title": "Reference",
-            "url": "https://news24online.com/india/live-update-today-latest-news-breaking-delhi-ncr-aqi-school-holiday-sydney-bondi-beach-terror-attack-australia-parliament-winter-session-jaishankar-pm-modi-nitin-nabin-up-manipur-violence/687705/",
-            "publisher": "News24online.com"
+            "url": "https://timesofindia.indiatimes.com/india/breaking-news-live-updates-15-december-2025/liveblog/125964562.cms",
+            "publisher": "Timesofindia.indiatimes.com"
           },
           {
             "title": "Reference",
@@ -35,9 +35,9 @@
         "article_id": "india-2025-12-15-morning-001"
       },
       {
-        "title": "Indian rupee falls to record low of 90.56 vs USD",
-        "summary": "The rupee weakened to a historic low of 90.56 against the US dollar overnight, marking its second straight week of decline. This development reflects ongoing economic pressures amid global factors. Markets opened with continued depreciation reported early Monday.",
-        "category": "economy",
+        "title": "Haryana Divests IPS Officer Shatrujeet Kapur of DGP Charge",
+        "summary": "Haryana government removed Shatrujeet Kapur from Director General of Police position overnight. A proposal with records of five IPS officers will be sent to UPSC on December 15 for empanelment. The Commission will prepare a panel of three officers for the state.",
+        "category": "politics",
         "source": {
           "name": "Hindustantimes.com",
           "url": "https://www.hindustantimes.com/"
@@ -45,20 +45,20 @@
         "citations": [
           {
             "title": "Reference",
-            "url": "https://economictimes.com/news/new-updates/school-news-assembly-headlines-for-december-15-2025-top-national-international-sports-and-business-update/articleshow/125963772.cms",
+            "url": "https://economictimes.com/news/new-updates/school-assembly-news-headlines-for-december-15-top-national-international-sports-and-business-update/articleshow/125963772.cms",
             "publisher": "Economictimes.com"
           },
           {
             "title": "Reference",
-            "url": "https://www.timesnownews.com/india/breaking-news-today-live-updates-india-international-world-latest-news-15-december-2025-liveblog-153293692",
-            "publisher": "Timesnownews.com"
+            "url": "https://ddnews.gov.in/en/indian-american-community-leader-calls-for-tariff-reversal-to-bolster-india-us-relations/",
+            "publisher": "Ddnews.gov.in"
           }
         ],
         "article_id": "india-2025-12-15-morning-002"
       },
       {
-        "title": "Fadnavis announces Mumbai-Hyderabad expressway, metro expansion",
-        "summary": "Maharashtra CM Devendra Fadnavis announced the Mumbai-Hyderabad expressway, metro expansions, and power tariff cuts during the winter session's concluding debate late Sunday. The initiatives aim to boost connectivity and urban infrastructure. Government emphasized accelerating development projects statewide.",
+        "title": "One Killed, Two Injured in Blast at Jalandhar Scrap Shop",
+        "summary": "A blast at a scrap shop in Jalandhar killed Shivmangal alias Inder and injured two others late Sunday night. The deceased lived in rented accommodation in the city. Police are investigating the cause of the explosion.",
         "category": "politics",
         "source": {
           "name": "Ndtv.com",
@@ -67,113 +67,147 @@
         "citations": [
           {
             "title": "Original Source",
-            "url": "https://www.ndtv.com/india",
-            "publisher": "Ndtv.com"
+            "url": "https://news.google.com/",
+            "publisher": "News Aggregator"
           }
         ],
         "article_id": "india-2025-12-15-morning-003"
       },
       {
-        "title": "Haryana divests IPS officer Shatrujeet Kapur of DGP charge",
-        "summary": "Haryana government removed Shatrujeet Kapur from DGP duties overnight, sending records of five IPS officers to UPSC for empanelment. A panel of three officers will be forwarded to the state soon. The move signals leadership changes in state police administration.",
+        "title": "NIA Court Declares Delhi Blast Accused Muzaffar Rather Proclaimed Offender",
+        "summary": "An NIA court issued a notice declaring Muzaffar Rather, accused in a Delhi blast case, as a proclaimed offender. The notice was published in local papers and pasted at his house in Qazigund, south Kashmir. The action followed his failure to appear in court.",
         "category": "politics",
         "source": {
           "name": "Economictimes.com",
-          "url": "https://economictimes.com/news/new-updates/school-news-assembly-headlines-for-december-15-2025-top-national-international-sports-and-business-update/articleshow/125963772.cms"
+          "url": "https://economictimes.com/news/new-updates/school-assembly-news-headlines-for-december-15-top-national-international-sports-and-business-update/articleshow/125963772.cms"
         },
         "citations": [
           {
             "title": "Original Source",
-            "url": "https://economictimes.com/news/new-updates/school-news-assembly-headlines-for-december-15-2025-top-national-international-sports-and-business-update/articleshow/125963772.cms",
-            "publisher": "Economictimes.com"
+            "url": "https://news.google.com/",
+            "publisher": "News Aggregator"
           }
         ],
         "article_id": "india-2025-12-15-morning-004"
       },
       {
-        "title": "BJP issues whip for Lok Sabha MPs in winter session",
-        "summary": "BJP directed all Lok Sabha MPs to attend House proceedings from December 15-19 as winter session enters final phase. The whip ensures presence amid key debates. This follows directives issued early Monday for substantive legislative business.",
+        "title": "Shinde Criticizes Opposition on Maharashtra Session's Last Day Over LoP Demand",
+        "summary": "Maharashtra CM Eknath Shinde slammed opposition parties on the final day of the assembly session for focusing solely on Leader of Opposition post. He accused them of ignoring substantive public issues in both Houses. The remarks came late Sunday.",
         "category": "politics",
         "source": {
-          "name": "Timesnownews.com",
-          "url": "https://www.timesnownews.com/india/breaking-news-today-live-updates-india-international-world-latest-news-15-december-2025-liveblog-153293692"
+          "name": "Ddnews.gov.in",
+          "url": "https://ddnews.gov.in/en/indian-american-community-leader-calls-for-tariff-reversal-to-bolster-india-us-relations/"
         },
         "citations": [
           {
             "title": "Original Source",
-            "url": "https://www.timesnownews.com/india/breaking-news-today-live-updates-india-international-world-latest-news-15-december-2025-liveblog-153293692",
-            "publisher": "Timesnownews.com"
+            "url": "https://news.google.com/",
+            "publisher": "News Aggregator"
           }
         ],
         "article_id": "india-2025-12-15-morning-005"
       },
       {
-        "title": "Shinde criticizes Opposition over LoP demand in Maharashtra",
-        "summary": "CM Eknath Shinde slammed Opposition on winter session's last day for focusing solely on Leader of Opposition post instead of public issues. He accused them of failing to raise substantive concerns. The exchange highlighted ongoing political tensions in legislature.",
+        "title": "BJP Elevates Nitin Nabin as Working President, Focuses on Bengal Expansion",
+        "summary": "Bihar minister Nitin Nabin was appointed BJP's new Working President, stating priority to strengthen party organization. He expressed confidence in winning elections even in Bengal. The announcement was made late Sunday evening.",
         "category": "politics",
         "source": {
-          "name": "Example.com",
-          "url": "https://news.google.com/search?q=Shinde+criticizes+Opposition+over+LoP+demand+in+Maharashtra"
+          "name": "Unknown Source",
+          "url": "https://example.com/"
         },
         "citations": [
           {
-            "title": "News Source",
-            "url": "https://news.google.com/search?q=Shinde+criticizes+Opposition+over+LoP+demand+in+Maharashtra",
-            "publisher": "Example.com"
+            "title": "Original Source",
+            "url": "https://news.google.com/",
+            "publisher": "News Aggregator"
           }
         ],
         "article_id": "india-2025-12-15-morning-006"
       },
       {
-        "title": "Delhi records second-worst December AQI at 461 Sunday night",
-        "summary": "Delhi's AQI reached 461 late Sunday, the second-worst December reading on record, due to weak winds and low temperatures trapping pollutants. This marked the most polluted day this winter. Overnight updates confirmed persistent severe conditions into Monday.",
-        "category": "environment",
+        "title": "Low 48% Turnout in Punjab Rural Body Polls Amid Violence Allegations",
+        "summary": "Polling for Punjab's zila parishad and block samiti elections concluded with only 48% voter turnout. Opposition parties alleged violence during the process across the state. Voting ended late Sunday amid subdued response.",
+        "category": "politics",
         "source": {
-          "name": "Example.com",
-          "url": "https://news.google.com/search?q=Delhi+records+second-worst+December+AQI+at+461+Sunday+night"
+          "name": "Unknown Source",
+          "url": "https://example.com/"
         },
         "citations": [
           {
-            "title": "News Source",
-            "url": "https://news.google.com/search?q=Delhi+records+second-worst+December+AQI+at+461+Sunday+night",
-            "publisher": "Example.com"
+            "title": "Original Source",
+            "url": "https://news.google.com/",
+            "publisher": "News Aggregator"
           }
         ],
         "article_id": "india-2025-12-15-morning-007"
       },
       {
-        "title": "NIA court declares Delhi blast accused Muzaffar Rather fugitive",
-        "summary": "An NIA court issued notices declaring Muzaffar Rather, accused in a Delhi blast case, a proclaimed offender early Monday. Notices were published in local papers and posted at his Qazigund residence in south Kashmir. The action follows his evasion of court summons.",
-        "category": "politics",
+        "title": "Delhi AQI Hits 461, Second-Worst December Day on Record",
+        "summary": "Delhi's air quality index reached 461 late Sunday, the highest this winter and second-worst December day ever. Weak winds and low temperatures trapped pollutants near the surface. The national capital recorded severe pollution levels.",
+        "category": "environment",
         "source": {
-          "name": "Example.com",
-          "url": "https://news.google.com/search?q=NIA+court+declares+Delhi+blast+accused+Muzaffar+Rather+fugitive"
+          "name": "Unknown Source",
+          "url": "https://example.com/"
         },
         "citations": [
           {
-            "title": "News Source",
-            "url": "https://news.google.com/search?q=NIA+court+declares+Delhi+blast+accused+Muzaffar+Rather+fugitive",
-            "publisher": "Example.com"
+            "title": "Original Source",
+            "url": "https://news.google.com/",
+            "publisher": "News Aggregator"
           }
         ],
         "article_id": "india-2025-12-15-morning-008"
+      },
+      {
+        "title": "Woman Stabbed to Death Inside Delhi Temple, One Arrested",
+        "summary": "A 48-year-old woman was stabbed to death inside a temple in Delhi late Sunday. Police arrested one suspect following the incident. The motive remains under investigation.",
+        "category": "politics",
+        "source": {
+          "name": "Unknown Source",
+          "url": "https://example.com/"
+        },
+        "citations": [
+          {
+            "title": "Original Source",
+            "url": "https://news.google.com/",
+            "publisher": "News Aggregator"
+          }
+        ],
+        "article_id": "india-2025-12-15-morning-009"
+      },
+      {
+        "title": "India Wins Third T20I Against South Africa by Seven Wickets in Dharamsala",
+        "summary": "India defeated South Africa by seven wickets in the third T20 International in Dharamsala. The match concluded late Sunday night. This victory marks a significant performance in the series.",
+        "category": "sports",
+        "source": {
+          "name": "Unknown Source",
+          "url": "https://example.com/"
+        },
+        "citations": [
+          {
+            "title": "Original Source",
+            "url": "https://news.google.com/",
+            "publisher": "News Aggregator"
+          }
+        ],
+        "article_id": "india-2025-12-15-morning-010"
       }
     ],
     "metadata": {
-      "article_count": 8,
+      "article_count": 10,
       "categories_distribution": {
-        "environment": 2,
-        "economy": 1,
-        "politics": 5
+        "politics": 8,
+        "environment": 1,
+        "sports": 1
       },
       "llm_model": "sonar",
       "llm_usage": {
         "prompt_tokens": 569,
-        "completion_tokens": 712,
-        "total_tokens": 1281
+        "completion_tokens": 844,
+        "total_tokens": 1413
       },
       "processing_time_seconds": 0.0,
-      "workflow_run_id": "20221711170"
+      "workflow_run_id": "20223333710"
     }
   }
 }
