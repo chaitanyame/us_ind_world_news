@@ -42,12 +42,12 @@ created: 2025-12-15
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T007 Implement Pydantic data models in `/workspaces/us_ind_world_news/backend/src/models/bulletin.py` (Bulletin entity with id, region enum [usa|india|world], date, period enum [morning|evening], generated_at, version, articles[], metadata)
-- [ ] T008 [P] Implement Pydantic data models in `/workspaces/us_ind_world_news/backend/src/models/article.py` (Article entity with title max 120 chars, summary 40-500 chars, category enum, source, citations[], article_id)
-- [ ] T009 [P] Implement exponential backoff retry logic in `/workspaces/us_ind_world_news/backend/src/utils/retry_logic.py` (3 retries with 1s, 2s, 4s delays, handle rate limit errors)
-- [ ] T010 [P] Implement structured logger in `/workspaces/us_ind_world_news/backend/src/utils/logger.py` (JSON format with timestamp, level, message, context fields)
-- [ ] T011 Create Perplexity API client wrapper in `/workspaces/us_ind_world_news/backend/src/fetchers/perplexity_client.py` (OpenAI client with base_url='https://api.perplexity.ai', sonar model, temp=0.3, max_tokens=1000, search_recency_filter='day', integrate retry logic from T009)
-- [ ] T012 Implement JSON formatter in `/workspaces/us_ind_world_news/backend/src/fetchers/json_formatter.py` (convert Perplexity API response to Bulletin/Article schema, validate with Pydantic models)
+- [X] T007 Implement Pydantic data models in `/workspaces/us_ind_world_news/backend/src/models/bulletin.py` (Bulletin entity with id, region enum [usa|india|world], date, period enum [morning|evening], generated_at, version, articles[], metadata)
+- [X] T008 [P] Implement Pydantic data models in `/workspaces/us_ind_world_news/backend/src/models/article.py` (Article entity with title max 120 chars, summary 40-500 chars, category enum, source, citations[], article_id)
+- [X] T009 [P] Implement exponential backoff retry logic in `/workspaces/us_ind_world_news/backend/src/utils/retry_logic.py` (3 retries with 1s, 2s, 4s delays, handle rate limit errors)
+- [X] T010 [P] Implement structured logger in `/workspaces/us_ind_world_news/backend/src/utils/logger.py` (JSON format with timestamp, level, message, context fields)
+- [X] T011 Create Perplexity API client wrapper in `/workspaces/us_ind_world_news/backend/src/fetchers/perplexity_client.py` (OpenAI client with base_url='https://api.perplexity.ai', sonar model, temp=0.3, max_tokens=1000, search_recency_filter='day', integrate retry logic from T009)
+- [X] T012 Implement JSON formatter in `/workspaces/us_ind_world_news/backend/src/fetchers/json_formatter.py` (convert Perplexity API response to Bulletin/Article schema, validate with Pydantic models)
 - [ ] T012a [P] Create pytest unit tests in `/workspaces/us_ind_world_news/backend/tests/test_bulletin_model.py` (test Pydantic validation, required fields, enum values, date formats)
 - [ ] T012b [P] Create pytest unit tests in `/workspaces/us_ind_world_news/backend/tests/test_article_model.py` (test title length limits, summary validation, category enum, citation structure)
 - [ ] T012c [P] Create pytest unit tests in `/workspaces/us_ind_world_news/backend/tests/test_retry_logic.py` (test exponential backoff timing, max retry limit, exception handling)
