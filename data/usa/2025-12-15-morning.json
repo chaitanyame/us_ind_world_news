@@ -19,12 +19,12 @@
           {
             "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20241215a.htm",
             "title": "Federal Reserve Press Release",
-            "source": "Federal Reserve"
+            "publisher": "Federal Reserve"
           },
           {
             "url": "https://www.reuters.com/markets/us/fed-rates-decision-december-2024/",
             "title": "Fed Holds Rates: Full Analysis",
-            "source": "Reuters"
+            "publisher": "Reuters"
           }
         ]
       },
@@ -41,12 +41,12 @@
           {
             "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/24-123.html",
             "title": "Supreme Court Docket",
-            "source": "U.S. Supreme Court"
+            "publisher": "U.S. Supreme Court"
           },
           {
             "url": "https://www.nytimes.com/2024/12/15/technology/section-230-social-media-case.html",
             "title": "Section 230 Under Fire",
-            "source": "The New York Times"
+            "publisher": "The New York Times"
           }
         ]
       },
@@ -63,12 +63,12 @@
           {
             "url": "https://www.spacex.com/launches/mission/?missionId=starlink-6-31",
             "title": "Starlink Mission 6-31",
-            "source": "SpaceX"
+            "publisher": "SpaceX"
           },
           {
             "url": "https://www.space.com/spacex-falcon-9-reusability-record",
             "title": "Falcon 9 Reusability Milestone",
-            "source": "Space.com"
+            "publisher": "Space.com"
           }
         ]
       },
@@ -85,12 +85,12 @@
           {
             "url": "https://www.weather.gov/grr/winter_storm_20241215",
             "title": "NWS Winter Storm Warning",
-            "source": "National Weather Service"
+            "publisher": "National Weather Service"
           },
           {
             "url": "https://www.flightaware.com/miserymap/",
             "title": "Flight Cancellation Map",
-            "source": "FlightAware"
+            "publisher": "FlightAware"
           }
         ]
       },
@@ -107,12 +107,12 @@
           {
             "url": "https://www.espn.com/nba/insider/story/_/id/39234567/lakers-trade-targets",
             "title": "Lakers Trade Targets Revealed",
-            "source": "ESPN"
+            "publisher": "ESPN"
           },
           {
             "url": "https://www.nba.com/lakers/news/lebron-james-postgame-interview",
             "title": "LeBron Post-Game Comments",
-            "source": "NBA.com"
+            "publisher": "NBA.com"
           }
         ]
       },
@@ -129,12 +129,12 @@
           {
             "url": "https://jamanetwork.com/journals/jama/fullarticle/2024123456",
             "title": "Mediterranean Diet and Cognitive Health",
-            "source": "JAMA Neurology"
+            "publisher": "JAMA Neurology"
           },
           {
             "url": "https://www.hopkinsmedicine.org/health/wellness-and-prevention/mediterranean-diet",
             "title": "Mediterranean Diet Guide",
-            "source": "Johns Hopkins Medicine"
+            "publisher": "Johns Hopkins Medicine"
           }
         ]
       },
@@ -151,12 +151,12 @@
           {
             "url": "https://ir.tesla.com/#quarterly-disclosure",
             "title": "Tesla Q4 Production Update",
-            "source": "Tesla Investor Relations"
+            "publisher": "Tesla Investor Relations"
           },
           {
             "url": "https://www.bloomberg.com/news/articles/2024-12-15/cybertruck-backlog-analysis",
             "title": "Cybertruck Demand Analysis",
-            "source": "Bloomberg"
+            "publisher": "Bloomberg"
           }
         ]
       },
@@ -173,12 +173,12 @@
           {
             "url": "https://hamiltonmusical.com/tour/",
             "title": "Hamilton Official Tour Dates",
-            "source": "HamiltonMusical.com"
+            "publisher": "HamiltonMusical.com"
           },
           {
             "url": "https://variety.com/2024/theater/news/lin-manuel-miranda-interview-hamilton-tour/",
             "title": "Lin-Manuel Miranda Interview",
-            "source": "Variety"
+            "publisher": "Variety"
           }
         ]
       }

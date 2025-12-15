@@ -9,6 +9,7 @@ import json
 import re
 from datetime import datetime, timezone
 from typing import Dict, Any, List, Optional
+from urllib.parse import urlparse
 from pydantic import ValidationError
 from ..models.article import (
     Article, Source, Citation, Metadata, LLMUsage,
@@ -20,6 +21,35 @@ from ..utils.logger import logger
 
 class JSONFormatter:
     """Formatter to convert Perplexity API responses to Bulletin objects."""
+    
+    @staticmethod
+    def _extract_domain_name(url: str) -> str:
+        """
+        Extract clean domain name from URL for display.
+        
+        Args:
+            url: Full URL string
+        
+        Returns:
+            Clean domain name (e.g., 'reuters.com' from 'https://www.reuters.com/...')
+        """
+        try:
+            parsed = urlparse(url)
+            domain = parsed.netloc.lower()
+            
+            # Remove 'www.' prefix if present
+            if domain.startswith('www.'):
+                domain = domain[4:]
+            
+            # Capitalize first letter of domain parts for display
+            # e.g., 'reuters.com' -> 'Reuters.com', 'nytimes.com' -> 'Nytimes.com'
+            parts = domain.split('.')
+            if parts:
+                parts[0] = parts[0].capitalize()
+            
+            return '.'.join(parts)
+        except Exception:
+            return "Unknown Source"
     
     def format(
         self,
@@ -304,17 +334,24 @@ class JSONFormatter:
             
             # Handle citation as string (URL) or dict
             if isinstance(citation, str):
-                # Citation is just a URL string
+                # Citation is just a URL string - extract domain as name
                 return Source(
-                    name="Unknown Source",
+                    name=self._extract_domain_name(citation),
                     url=citation,
                     published_at=None
                 )
             elif isinstance(citation, dict):
                 # Citation is a structured object
+                url = citation.get("url", "https://example.com")
+                name = citation.get("publisher") or citation.get("source")
+                
+                # If name is missing or "Unknown Source", extract from URL
+                if not name or name == "Unknown Source":
+                    name = self._extract_domain_name(url)
+                
                 return Source(
-                    name=citation.get("publisher", "Unknown Source"),
-                    url=citation.get("url", "https://example.com"),
+                    name=name,
+                    url=url,
                     published_at=citation.get("publishedDate")
                 )
             else:
@@ -363,18 +400,25 @@ class JSONFormatter:
             try:
                 # Handle citation as string (URL) or dict
                 if isinstance(citation_data, str):
-                    # Citation is just a URL string
+                    # Citation is just a URL string - extract domain as publisher
                     citation = Citation(
                         title="Reference",
                         url=citation_data,
-                        publisher="Unknown"
+                        publisher=self._extract_domain_name(citation_data)
                     )
                 elif isinstance(citation_data, dict):
                     # Citation is a structured object
+                    url = citation_data.get("url", "https://example.com")
+                    publisher = citation_data.get("publisher") or citation_data.get("source")
+                    
+                    # If publisher is missing or "Unknown", extract from URL
+                    if not publisher or publisher == "Unknown":
+                        publisher = self._extract_domain_name(url)
+                    
                     citation = Citation(
                         title=citation_data.get("title", "Reference"),
-                        url=citation_data.get("url", "https://example.com"),
-                        publisher=citation_data.get("publisher", "Unknown")
+                        url=url,
+                        publisher=publisher
                     )
                 else:
                     # Skip unexpected types
@@ -396,10 +440,14 @@ class JSONFormatter:
         
         # Ensure at least 1 citation (Pydantic requires 1-3)
         if not citations:
+            logger.warning(
+                "No citations available, using placeholder",
+                extra={"article_index": article_index}
+            )
             citations.append(Citation(
                 title="Original Source",
-                url="https://example.com",
-                publisher="Unknown"
+                url="https://news.google.com",
+                publisher="News Aggregator"
             ))
         
         return citations[:max_citations]
