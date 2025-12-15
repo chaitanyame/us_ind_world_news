@@ -1,0 +1,156 @@
+{
+  "bulletin": {
+    "id": "usa-2025-12-15-evening",
+    "region": "usa",
+    "date": "2025-12-15",
+    "period": "evening",
+    "generated_at": "2025-12-15T06:56:52Z",
+    "version": "1.0",
+    "articles": [
+      {
+        "title": "House Debates Multiple Bills on Education, Defense, and Environment",
+        "summary": "The US House of Representatives convened morning and afternoon sessions on December 15, 2025, to debate legislation from committees including Education and Workforce, Oversight, Armed Services, Transportation, and Natural Resources. Key bills include the Whole Milk for Healthy Kids Act, Federal Supervisor Education Act, and Save Our Seas 2.0 Amendments Act. Proceedings aim to advance various policy priorities before year-end.",
+        "category": "politics",
+        "source": {
+          "name": "Youtube.com",
+          "url": "https://www.youtube.com/watch?v=vdxaEmH_nMM"
+        },
+        "citations": [
+          {
+            "title": "Reference",
+            "url": "https://www.youtube.com/watch?v=vdxaEmH_nMM",
+            "publisher": "Youtube.com"
+          },
+          {
+            "title": "Reference",
+            "url": "https://92q.com/playlist/the-biggest-news-stories-of-2025/",
+            "publisher": "92q.com"
+          },
+          {
+            "title": "Reference",
+            "url": "https://www.euronews.com/video/2025/12/15/latest-news-bulletin-december-15th-2025-morning",
+            "publisher": "Euronews.com"
+          }
+        ],
+        "article_id": "usa-2025-12-15-evening-001"
+      },
+      {
+        "title": "House Prepares Vote on $900 Billion Defense Policy Bill",
+        "summary": "The House is scheduled for a Wednesday vote on a 3,000-page defense authorization bill exceeding Trump administration requests by $8 billion, codifying executive orders and boosting border security. Provisions include troop deployment at the US-Mexico border, a 3.8% military pay raise, Ukraine aid, and bans on transgender women in military sports. The bill faces some Republican internal friction but has bipartisan history.",
+        "category": "politics",
+        "source": {
+          "name": "92q.com",
+          "url": "https://92q.com/playlist/the-biggest-news-stories-of-2025/"
+        },
+        "citations": [
+          {
+            "title": "Reference",
+            "url": "https://www.cbsnews.com/us/",
+            "publisher": "Cbsnews.com"
+          }
+        ],
+        "article_id": "usa-2025-12-15-evening-002"
+      },
+      {
+        "title": "Hollywood Director Rob Reiner and Wife Found Dead in Apparent Homicide",
+        "summary": "Rob Reiner, 78, and wife Michele, 68, were discovered dead Sunday afternoon in their Los Angeles home, with police investigating as an apparent homicide. Sources confirmed the deaths to CBS News amid ongoing inquiry. No further details on suspects or motive released yet.",
+        "category": "politics",
+        "source": {
+          "name": "Euronews.com",
+          "url": "https://www.euronews.com/video/2025/12/15/latest-news-bulletin-december-15th-2025-morning"
+        },
+        "citations": [
+          {
+            "title": "Original Source",
+            "url": "https://news.google.com/",
+            "publisher": "News Aggregator"
+          }
+        ],
+        "article_id": "usa-2025-12-15-evening-003"
+      },
+      {
+        "title": "63 Million Americans Under Cold Weather Advisory",
+        "summary": "Approximately 63 million people face cold weather advisories, with 11 million under freeze warnings, particularly in Gulf States experiencing rare low temperatures. Alerts issued Sunday affect wide US regions amid winter weather patterns. Public safety measures urged by authorities.",
+        "category": "environment",
+        "source": {
+          "name": "Cbsnews.com",
+          "url": "https://www.cbsnews.com/us/"
+        },
+        "citations": [
+          {
+            "title": "Original Source",
+            "url": "https://news.google.com/",
+            "publisher": "News Aggregator"
+          }
+        ],
+        "article_id": "usa-2025-12-15-evening-004"
+      },
+      {
+        "title": "Rep. Ilhan Omar's Son Questioned by Immigration Agents",
+        "summary": "Democratic Minnesota Rep. Ilhan Omar reported federal immigration agents pulled over her son on Saturday, demanding proof of citizenship. Incident highlights tensions in immigration enforcement practices. Omar raised concerns over the encounter's implications.",
+        "category": "politics",
+        "source": {
+          "name": "Unknown Source",
+          "url": "https://example.com/"
+        },
+        "citations": [
+          {
+            "title": "Original Source",
+            "url": "https://news.google.com/",
+            "publisher": "News Aggregator"
+          }
+        ],
+        "article_id": "usa-2025-12-15-evening-005"
+      },
+      {
+        "title": "Jan. 6 Officer Daniel Hodges Opposes Riot History Whitewashing",
+        "summary": "DC Metropolitan Police Officer Daniel Hodges stated he is working to prevent revisionism of the January 6, 2021, Capitol riot history. Hodges, who testified previously, emphasized preserving accurate records amid ongoing debates. Efforts focus on countering narrative shifts.",
+        "category": "politics",
+        "source": {
+          "name": "Unknown Source",
+          "url": "https://example.com/"
+        },
+        "citations": [
+          {
+            "title": "Original Source",
+            "url": "https://news.google.com/",
+            "publisher": "News Aggregator"
+          }
+        ],
+        "article_id": "usa-2025-12-15-evening-006"
+      },
+      {
+        "title": "Person of Interest Released in Brown University Shooting",
+        "summary": "A person of interest detained overnight linked to a deadly shooting at Brown University was released Sunday night, officials announced. Investigation continues into the incident's circumstances. No additional arrests reported as of latest updates.",
+        "category": "politics",
+        "source": {
+          "name": "Unknown Source",
+          "url": "https://example.com/"
+        },
+        "citations": [
+          {
+            "title": "Original Source",
+            "url": "https://news.google.com/",
+            "publisher": "News Aggregator"
+          }
+        ],
+        "article_id": "usa-2025-12-15-evening-007"
+      }
+    ],
+    "metadata": {
+      "article_count": 7,
+      "categories_distribution": {
+        "politics": 6,
+        "environment": 1
+      },
+      "llm_model": "sonar",
+      "llm_usage": {
+        "prompt_tokens": 525,
+        "completion_tokens": 650,
+        "total_tokens": 1175
+      },
+      "processing_time_seconds": 0.0,
+      "workflow_run_id": "20223259797"
+    }
+  }
+}
