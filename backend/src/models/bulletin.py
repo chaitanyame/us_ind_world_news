@@ -16,7 +16,7 @@ class Bulletin(BaseModel):
     Top-level container for a news bulletin.
     
     A bulletin represents a single publication (morning or evening) for a specific
-    region and date, containing 5-10 news articles with metadata.
+    region and date, containing 4-10 news articles with metadata.
     """
     
     id: str = Field(
@@ -29,7 +29,7 @@ class Bulletin(BaseModel):
     period: PeriodEnum = Field(..., description="Time period (morning/evening)")
     generated_at: datetime = Field(..., description="UTC timestamp when bulletin was generated")
     version: str = Field(default="1.0", pattern=r"^\d+\.\d+$", description="Schema version")
-    articles: List[Article] = Field(..., min_length=5, max_length=10, description="News articles")
+    articles: List[Article] = Field(..., min_length=4, max_length=10, description="News articles (4-10)")
     metadata: Metadata = Field(..., description="Generation metadata")
 
     @field_validator('generated_at')
