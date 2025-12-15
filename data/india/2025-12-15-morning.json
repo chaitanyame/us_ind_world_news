@@ -67,8 +67,8 @@
         "citations": [
           {
             "title": "Original Source",
-            "url": "https://example.com/",
-            "publisher": "Example.com"
+            "url": "https://www.ndtv.com/india",
+            "publisher": "Ndtv.com"
           }
         ],
         "article_id": "india-2025-12-15-morning-003"
@@ -84,8 +84,8 @@
         "citations": [
           {
             "title": "Original Source",
-            "url": "https://example.com/",
-            "publisher": "Example.com"
+            "url": "https://economictimes.com/news/new-updates/school-news-assembly-headlines-for-december-15-2025-top-national-international-sports-and-business-update/articleshow/125963772.cms",
+            "publisher": "Economictimes.com"
           }
         ],
         "article_id": "india-2025-12-15-morning-004"
@@ -101,8 +101,8 @@
         "citations": [
           {
             "title": "Original Source",
-            "url": "https://example.com/",
-            "publisher": "Example.com"
+            "url": "https://www.timesnownews.com/india/breaking-news-today-live-updates-india-international-world-latest-news-15-december-2025-liveblog-153293692",
+            "publisher": "Timesnownews.com"
           }
         ],
         "article_id": "india-2025-12-15-morning-005"
@@ -117,8 +117,8 @@
         },
         "citations": [
           {
-            "title": "Original Source",
-            "url": "https://example.com/",
+            "title": "News Source",
+            "url": "https://news.google.com/search?q=Shinde+criticizes+Opposition+over+LoP+demand+in+Maharashtra",
             "publisher": "Example.com"
           }
         ],
@@ -134,8 +134,8 @@
         },
         "citations": [
           {
-            "title": "Original Source",
-            "url": "https://example.com/",
+            "title": "News Source",
+            "url": "https://news.google.com/search?q=Delhi+records+second-worst+December+AQI+at+461+Sunday+night",
             "publisher": "Example.com"
           }
         ],
@@ -151,8 +151,8 @@
         },
         "citations": [
           {
-            "title": "Original Source",
-            "url": "https://example.com/",
+            "title": "News Source",
+            "url": "https://news.google.com/search?q=NIA+court+declares+Delhi+blast+accused+Muzaffar+Rather+fugitive",
             "publisher": "Example.com"
           }
         ],

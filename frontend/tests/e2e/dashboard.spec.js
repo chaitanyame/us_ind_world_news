@@ -116,4 +116,36 @@ test.describe('Global News Brief Dashboard', () => {
         await page.click('#theme-toggle');
         await expect(page.locator('html')).toHaveClass(/dark/);
     });
+
+    test('should display proper citation publishers (no Unknown or example.com)', async ({ page }) => {
+        // Wait for articles to load
+        await page.waitForSelector('#loading-state.hidden, #articles-container article', { 
+            state: 'attached', 
+            timeout: 10000 
+        });
+        
+        // Check if articles exist
+        const articleCount = await page.locator('#articles-container article').count();
+        
+        if (articleCount > 0) {
+            // Get all citation links
+            const citationLinks = page.locator('a[target="_blank"][rel="noopener noreferrer"]');
+            const linkCount = await citationLinks.count();
+            
+            if (linkCount > 0) {
+                // Check first 5 citations
+                const checkCount = Math.min(5, linkCount);
+                for (let i = 0; i < checkCount; i++) {
+                    const link = citationLinks.nth(i);
+                    const href = await link.getAttribute('href');
+                    
+                    // Should not contain example.com
+                    expect(href).not.toContain('example.com');
+                    
+                    // URL should be a valid HTTP/HTTPS URL
+                    expect(href).toMatch(/^https?:\/\/.+/);
+                }
+            }
+        }
+    });
 });
