@@ -119,7 +119,7 @@ class PerplexityClient:
             user_prompt = self._get_default_user_prompt(region, period, date)
         
         try:
-            # Make API call with search recency filter
+            # Make API call to Perplexity
             response = self.client.chat.completions.create(
                 model=self.model,
                 temperature=self.temperature,
@@ -127,11 +127,7 @@ class PerplexityClient:
                 messages=[
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt}
-                ],
-                # Perplexity-specific parameters
-                search_recency_filter="day",  # Only today's news
-                return_citations=True,
-                return_images=False
+                ]
             )
             
             logger.info(
@@ -214,12 +210,15 @@ class PerplexityClient:
         
         audience = audience_map.get(region, "general")
         
-        return f"""You are a professional news curator for a {audience} audience. Your task is to search the web for the most important breaking news stories and create concise, factual summaries suitable for a news brief.
+        return f"""You are a professional news curator for a {audience} audience. Your task is to search the web for the most important, substantive news stories and create concise, factual summaries suitable for a news brief.
 
 Guidelines:
 - Focus on verified information from major news outlets
-- Prioritize stories with high public impact
-- Avoid speculation or opinion
+- Prioritize stories with high public impact and substantive developments
+- IMPORTANT: Focus on important news delivery, NOT sensationalism or clickbait
+- Avoid celebrity gossip, viral content, and minor controversies unless nationally significant
+- Avoid speculation, opinion, or inflammatory language
+- Only include stories with significant new developments (avoid rehashing old news)
 - If fewer than 10 stories are available, return what you find
 - Never fabricate information if sources are unavailable
 - Format response as JSON with an 'articles' array containing objects with 'title', 'summary', and 'category' fields"""
@@ -232,23 +231,31 @@ Guidelines:
             "world": "around the world"
         }[region]
         
-        time_context = {
-            "morning": "today",
-            "evening": "today's developments"
-        }[period]
+        if period == "morning":
+            time_context = "overnight developments from 9 PM yesterday to 7 AM today"
+            time_window = "published between 9 PM yesterday and 7 AM today"
+            focus_note = "Focus on overnight developments, breaking news, and stories that emerged after 9 PM yesterday. DO NOT include stories from yesterday's daytime (7 AM - 9 PM) as those were covered in the evening bulletin."
+        else:  # evening
+            time_context = "today's daytime developments from 7 AM to 9 PM"
+            time_window = "published between 7 AM and 9 PM today"
+            focus_note = "Focus on today's daytime developments and breaking news. DO NOT include stories from last night's bulletin (9 PM yesterday - 7 AM today) unless there are significant NEW developments."
         
-        return f"""Search the web and identify the top 10 breaking news stories in {region_name} for {time_context} ({date}).
+        return f"""Search the web and identify the top 10 most important news stories in {region_name} for {time_context} ({date}).
 
 For each story, provide:
-1. Title (max 12 words, attention-grabbing but factual)
+1. Title (max 12 words, factual and informative, NOT sensationalized)
 2. Summary (2-3 sentences, 40-60 words, covering who/what/when/where/why)
 3. Category (select ONE from: politics, economy, technology, business, sports, health, environment, science, world)
 
 Requirements:
-- Only include stories published within the last 24 hours
-- Prioritize stories with high national/international significance
-- Prefer articles from established news outlets
+- Only include stories {time_window}
+- {focus_note}
+- Prioritize substantive stories with high public impact (policy changes, major economic news, significant events)
+- AVOID: Celebrity gossip, viral social media content, minor scandals, clickbait
+- AVOID: Repeating stories from previous bulletin unless there are major new developments
+- Prefer articles from established, credible news outlets
 - Ensure summaries are self-contained (readable without clicking through)
 - If fewer than 10 stories meet criteria, return available stories only
+- Focus on important news delivery, not sensationalism
 
 Return response as JSON: {{"articles": [{{"title": "...", "summary": "...", "category": "..."}}]}}"""

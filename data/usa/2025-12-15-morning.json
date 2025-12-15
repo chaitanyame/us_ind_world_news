@@ -189,8 +189,7 @@
       "completion_tokens": 1200,
       "total_tokens": 2050,
       "model": "sonar",
-      "temperature": 0.3,
-      "search_recency_filter": "day"
+      "temperature": 0.3
     }
   }
 }

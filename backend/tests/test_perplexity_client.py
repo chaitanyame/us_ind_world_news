@@ -94,7 +94,6 @@ class TestPerplexityClient:
         assert call_kwargs["model"] == "sonar"
         assert call_kwargs["temperature"] == 0.3
         assert call_kwargs["max_tokens"] == 1000
-        assert call_kwargs["search_recency_filter"] == "day"
         assert len(call_kwargs["messages"]) == 2
         assert call_kwargs["messages"][0]["role"] == "system"
         assert call_kwargs["messages"][1]["role"] == "user"
