@@ -278,7 +278,7 @@ class NewsFetcher:
             
             # Add entry
             index[self.region][self.date][self.period] = {
-                "filepath": f"data/{self.region}/{filepath.name}",
+                "filepath": f"{self.region}/{filepath.name}",
                 "updated_at": datetime.now(timezone.utc).isoformat()
             }
             
