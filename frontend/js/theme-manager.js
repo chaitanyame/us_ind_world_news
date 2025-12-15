@@ -79,14 +79,27 @@ class ThemeManager {
             html.classList.add('light');
         }
         
+        // Update theme toggle icons
+        const darkIcon = document.querySelector('.dark-icon');
+        const lightIcon = document.querySelector('.light-icon');
+        if (darkIcon && lightIcon) {
+            if (theme === 'dark') {
+                darkIcon.classList.remove('hidden');
+                lightIcon.classList.add('hidden');
+            } else {
+                darkIcon.classList.add('hidden');
+                lightIcon.classList.remove('hidden');
+            }
+        }
+        
         // Update meta theme-color for mobile browsers
         const metaThemeColor = document.querySelector('meta[name="theme-color"]');
         if (metaThemeColor) {
-            metaThemeColor.setAttribute('content', theme === 'dark' ? '#0f172a' : '#ffffff');
+            metaThemeColor.setAttribute('content', theme === 'dark' ? '#020617' : '#f6f7f8');
         } else {
             const meta = document.createElement('meta');
             meta.name = 'theme-color';
-            meta.content = theme === 'dark' ? '#0f172a' : '#ffffff';
+            meta.content = theme === 'dark' ? '#020617' : '#f6f7f8';
             document.head.appendChild(meta);
         }
     }

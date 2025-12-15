@@ -1,232 +1,233 @@
 <!DOCTYPE html>
-<html lang="en" class="light">
+<html class="dark" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Global News Brief - Get AI-curated news summaries from USA, India, and the World">
-    <title>Global News Brief - Morning & Evening News Updates</title>
-    
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Tailwind Configuration -->
-    <script>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Global News Brief Dashboard</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
         tailwind.config = {
-            darkMode: 'class',
+            darkMode: "class",
             theme: {
                 extend: {
                     colors: {
-                        // Light theme
-                        'bg-light': '#ffffff',
-                        'bg-secondary-light': '#f9fafb',
-                        'text-primary-light': '#111827',
-                        'text-secondary-light': '#6b7280',
-                        'border-light': '#e5e7eb',
-                        'card-light': '#ffffff',
-                        
-                        // Dark theme
-                        'bg-dark': '#0f172a',
-                        'bg-secondary-dark': '#1e293b',
-                        'text-primary-dark': '#f1f5f9',
-                        'text-secondary-dark': '#94a3b8',
-                        'border-dark': '#334155',
-                        'card-dark': '#1e293b',
-                        
-                        // Category colors
-                        'politics': '#3b82f6',
-                        'economy': '#10b981',
-                        'technology': '#a855f7',
-                        'world': '#f59e0b',
-                        'security': '#ef4444',
-                        'society': '#8b5cf6',
-                        'environment': '#059669',
-                        'health': '#ec4899',
-                        'sports': '#f97316',
-                        'entertainment': '#6366f1'
-                    }
-                }
-            }
+                        "primary": "#38bdf8",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#020617",
+                        "card-dark": "#0f172a",
+                        "card-light": "#ffffff",
+                        "text-primary-dark": "#e2e8f0",
+                        "text-secondary-dark": "#94a3b8",
+                        "text-primary-light": "#0f172a",
+                        "text-secondary-light": "#64748b",
+                        "border-dark": "#1e293b",
+                        "border-light": "#e2e8f0",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "md": "0.375rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
         }
     </script>
-    
-    <!-- Google Material Symbols -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="css/styles.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📰</text></svg>">
+    <style>
+        /* Category colors */
+        .category-economy { background-color: rgba(56, 189, 248, 0.1); color: #38bdf8; }
+        .category-politics { background-color: rgba(251, 191, 36, 0.1); color: #fbbf24; }
+        .category-technology { background-color: rgba(56, 189, 248, 0.1); color: #38bdf8; }
+        .category-environment { background-color: rgba(52, 211, 153, 0.1); color: #34d399; }
+        .category-health { background-color: rgba(236, 72, 153, 0.1); color: #ec4899; }
+        .category-sports { background-color: rgba(249, 115, 22, 0.1); color: #f97316; }
+        .category-entertainment { background-color: rgba(139, 92, 246, 0.1); color: #8b5cf6; }
+        .category-business { background-color: rgba(34, 197, 94, 0.1); color: #22c55e; }
+        .category-weather { background-color: rgba(96, 165, 250, 0.1); color: #60a5fa; }
+        .category-world { background-color: rgba(251, 191, 36, 0.1); color: #fbbf24; }
+        .category-space { background-color: rgba(232, 121, 249, 0.1); color: #e879f9; }
+        .category-science { background-color: rgba(45, 212, 191, 0.1); color: #2dd4bf; }
+        .category-security { background-color: rgba(239, 68, 68, 0.1); color: #ef4444; }
+        .category-society { background-color: rgba(139, 92, 246, 0.1); color: #8b5cf6; }
+        
+        /* Light mode overrides */
+        html:not(.dark) body {
+            background-color: #f6f7f8;
+            color: #0f172a;
+        }
+        html:not(.dark) .bg-background-dark { background-color: #f6f7f8; }
+        html:not(.dark) .bg-card-dark { background-color: #ffffff; }
+        html:not(.dark) .border-border-dark { border-color: #e2e8f0; }
+        html:not(.dark) .text-text-primary-dark { color: #0f172a; }
+        html:not(.dark) .text-text-secondary-dark { color: #64748b; }
+        html:not(.dark) .ring-border-dark { --tw-ring-color: #e2e8f0; }
+        html:not(.dark) .hover\:bg-slate-700:hover { background-color: #f1f5f9; }
+        html:not(.dark) .hover\:bg-slate-800:hover { background-color: #f1f5f9; }
+        html:not(.dark) .bg-slate-900\/50 { background-color: rgba(241, 245, 249, 0.5); }
+        html:not(.dark) .bg-slate-700\/50 { background-color: rgba(241, 245, 249, 0.8); }
+        
+        /* Skeleton animation */
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+        .skeleton {
+            background: linear-gradient(90deg, #1e293b 25%, #334155 50%, #1e293b 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
+        }
+        html:not(.dark) .skeleton {
+            background: linear-gradient(90deg, #e2e8f0 25%, #f1f5f9 50%, #e2e8f0 75%);
+            background-size: 200% 100%;
+        }
+    </style>
 </head>
-<body class="bg-bg-light dark:bg-bg-dark text-text-primary-light dark:text-text-primary-dark transition-colors duration-300">
-    <!-- Header -->
-    <header class="border-b border-border-light dark:border-border-dark sticky top-0 bg-bg-light/80 dark:bg-bg-dark/80 backdrop-blur-sm z-50">
-        <div class="container mx-auto px-4 py-4">
-            <div class="flex items-center justify-between">
-                <!-- Logo -->
-                <div class="flex items-center gap-2">
-                    <span class="text-3xl">📰</span>
-                    <h1 class="text-2xl font-bold">
-                        <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Global News Brief</span>
-                    </h1>
+<body class="bg-background-dark text-text-primary-dark font-display antialiased min-h-screen flex flex-col overflow-x-hidden">
+    <header class="sticky top-0 z-50 w-full border-b border-border-dark bg-background-dark/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="flex items-center justify-center size-10 rounded-lg bg-primary/10 text-primary">
+                        <span class="material-symbols-outlined text-3xl">newspaper</span>
+                    </div>
+                    <h1 class="text-xl font-bold tracking-tight hidden md:block">Global News Brief</h1>
                 </div>
-                
-                <!-- Theme Toggle -->
-                <button 
-                    id="theme-toggle" 
-                    class="p-2 rounded-lg hover:bg-bg-secondary-light dark:hover:bg-bg-secondary-dark transition-colors"
-                    aria-label="Toggle theme"
-                >
-                    <span class="material-symbols-outlined light-icon">dark_mode</span>
-                    <span class="material-symbols-outlined dark-icon hidden">light_mode</span>
+                <div class="flex-1 max-w-lg mx-auto md:ml-12">
+                    <div class="relative w-full group">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-text-secondary-dark">
+                            <span class="material-symbols-outlined">search</span>
+                        </div>
+                        <input id="search-input" class="block w-full rounded-lg border-0 py-2 pl-10 ring-1 ring-inset ring-border-dark placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-primary bg-card-dark text-sm sm:leading-6" placeholder="Search topics, regions..." type="text" value=""/>
+                    </div>
+                </div>
+                <button id="theme-toggle" class="p-2 rounded-lg hover:bg-slate-700 transition-colors ml-4" aria-label="Toggle theme">
+                    <span class="material-symbols-outlined dark-icon">light_mode</span>
+                    <span class="material-symbols-outlined light-icon hidden">dark_mode</span>
                 </button>
-            </div>
-            
-            <!-- Region Filter & Period Toggle -->
-            <div class="mt-4 flex flex-wrap gap-4 items-center">
-                <!-- Region Buttons -->
-                <div class="flex gap-2" role="group" aria-label="Region filter">
-                    <button 
-                        class="region-btn active" 
-                        data-region="usa"
-                        aria-pressed="true"
-                    >
-                        <span class="flag">🇺🇸</span>
-                        <span>USA</span>
-                    </button>
-                    <button 
-                        class="region-btn" 
-                        data-region="india"
-                        aria-pressed="false"
-                    >
-                        <span class="flag">🇮🇳</span>
-                        <span>India</span>
-                    </button>
-                    <button 
-                        class="region-btn" 
-                        data-region="world"
-                        aria-pressed="false"
-                    >
-                        <span class="flag">🌍</span>
-                        <span>World</span>
-                    </button>
-                </div>
-                
-                <!-- Period Toggle -->
-                <div class="flex gap-2" role="group" aria-label="Time period">
-                    <button 
-                        class="period-btn active" 
-                        data-period="morning"
-                        aria-pressed="true"
-                    >
-                        <span class="material-symbols-outlined text-sm">wb_twilight</span>
-                        <span>Morning</span>
-                    </button>
-                    <button 
-                        class="period-btn" 
-                        data-period="evening"
-                        aria-pressed="false"
-                    >
-                        <span class="material-symbols-outlined text-sm">nightlight</span>
-                        <span>Evening</span>
-                    </button>
-                </div>
-                
-                <!-- Date Navigator -->
-                <div class="ml-auto flex items-center gap-2">
-                    <button 
-                        id="prev-date" 
-                        class="p-2 rounded-lg hover:bg-bg-secondary-light dark:hover:bg-bg-secondary-dark transition-colors disabled:opacity-50"
-                        aria-label="Previous day"
-                    >
-                        <span class="material-symbols-outlined">chevron_left</span>
-                    </button>
-                    <span id="current-date" class="text-sm font-medium px-3">Today</span>
-                    <button 
-                        id="next-date" 
-                        class="p-2 rounded-lg hover:bg-bg-secondary-light dark:hover:bg-bg-secondary-dark transition-colors disabled:opacity-50"
-                        aria-label="Next day"
-                        disabled
-                    >
-                        <span class="material-symbols-outlined">chevron_right</span>
-                    </button>
-                </div>
             </div>
         </div>
     </header>
-    
-    <!-- Main Content -->
-    <main class="container mx-auto px-4 py-8">
-        <!-- Bulletin Info -->
-        <div id="bulletin-info" class="mb-6 hidden">
-            <div class="flex items-center justify-between text-sm text-text-secondary-light dark:text-text-secondary-dark">
-                <div class="flex items-center gap-4">
-                    <span id="bulletin-date"></span>
-                    <span id="bulletin-count"></span>
+
+    <main class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Sidebar: Archive -->
+            <aside class="w-full lg:w-64 shrink-0">
+                <div class="sticky top-24">
+                    <div class="mb-6">
+                        <h2 class="text-lg font-bold text-text-primary-dark mb-1">Archive</h2>
+                        <p class="text-xs text-text-secondary-dark">Select a date to view past briefings</p>
+                    </div>
+                    <div class="bg-card-dark rounded-xl border border-border-dark overflow-hidden">
+                        <div class="p-4 border-b border-border-dark bg-slate-900/50 flex items-center justify-between">
+                            <span id="archive-month" class="font-semibold text-sm">December 2025</span>
+                            <div class="flex gap-1">
+                                <button id="prev-month" class="p-1 hover:bg-slate-700 rounded"><span class="material-symbols-outlined text-base">chevron_left</span></button>
+                                <button id="next-month" class="p-1 hover:bg-slate-700 rounded"><span class="material-symbols-outlined text-base">chevron_right</span></button>
+                            </div>
+                        </div>
+                        <div id="date-list" class="p-2 space-y-1">
+                            <!-- Dates dynamically inserted -->
+                        </div>
+                    </div>
                 </div>
-                <span id="bulletin-generated"></span>
-            </div>
-        </div>
-        
-        <!-- Loading State -->
-        <div id="loading-state" class="hidden">
-            <div class="flex items-center justify-center py-12">
-                <div class="text-center">
-                    <div class="inline-block animate-spin rounded-full h-12 w-12 border-4 border-gray-300 border-t-blue-600"></div>
-                    <p class="mt-4 text-text-secondary-light dark:text-text-secondary-dark">Loading news...</p>
+            </aside>
+
+            <!-- Main Content -->
+            <div class="flex-1 min-w-0">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6 pb-6 border-b border-border-dark">
+                    <div>
+                        <h2 class="text-2xl font-bold tracking-tight">Briefing Feed</h2>
+                        <p class="text-sm text-text-secondary-dark mt-1">
+                            <span id="display-date" class="text-primary font-medium">Monday, December 15</span> • <span id="article-count">Showing 0 AI-summarized updates</span>
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-end gap-3 w-full sm:w-auto">
+                        <!-- Period Toggle -->
+                        <div class="flex p-1 bg-card-dark rounded-lg border border-border-dark">
+                            <button id="btn-morning" class="period-btn flex items-center gap-2 px-3 py-1.5 rounded-md bg-slate-700/50 shadow-sm text-xs font-bold text-primary transition-all" data-period="morning">
+                                <span class="material-symbols-outlined text-[16px]">wb_sunny</span>
+                                Morning
+                            </button>
+                            <button id="btn-evening" class="period-btn flex items-center gap-2 px-3 py-1.5 rounded-md text-text-secondary-dark hover:text-text-primary-dark text-xs font-bold transition-all" data-period="evening">
+                                <span class="material-symbols-outlined text-[16px]">bedtime</span>
+                                Evening
+                            </button>
+                        </div>
+                        <!-- Region Filter -->
+                        <div id="region-filters" class="flex items-center gap-2 flex-wrap">
+                            <button class="region-btn px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20 text-xs font-bold" data-region="all">All Regions</button>
+                            <button class="region-btn px-3 py-1 rounded-full bg-transparent text-text-secondary-dark border border-border-dark hover:border-slate-600 text-xs font-medium transition-colors" data-region="usa">USA</button>
+                            <button class="region-btn px-3 py-1 rounded-full bg-transparent text-text-secondary-dark border border-border-dark hover:border-slate-600 text-xs font-medium transition-colors" data-region="india">India</button>
+                            <button class="region-btn px-3 py-1 rounded-full bg-transparent text-text-secondary-dark border border-border-dark hover:border-slate-600 text-xs font-medium transition-colors" data-region="world">World</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Loading State -->
+                <div id="loading-state" class="hidden space-y-0">
+                    <div class="py-6 border-b border-border-dark">
+                        <div class="skeleton h-6 w-24 rounded mb-4"></div>
+                        <div class="skeleton h-8 w-3/4 rounded mb-3"></div>
+                        <div class="skeleton h-4 w-full rounded mb-2"></div>
+                        <div class="skeleton h-4 w-2/3 rounded"></div>
+                    </div>
+                    <div class="py-6 border-b border-border-dark">
+                        <div class="skeleton h-6 w-24 rounded mb-4"></div>
+                        <div class="skeleton h-8 w-3/4 rounded mb-3"></div>
+                        <div class="skeleton h-4 w-full rounded mb-2"></div>
+                        <div class="skeleton h-4 w-2/3 rounded"></div>
+                    </div>
+                    <div class="py-6 border-b border-border-dark">
+                        <div class="skeleton h-6 w-24 rounded mb-4"></div>
+                        <div class="skeleton h-8 w-3/4 rounded mb-3"></div>
+                        <div class="skeleton h-4 w-full rounded mb-2"></div>
+                        <div class="skeleton h-4 w-2/3 rounded"></div>
+                    </div>
+                </div>
+
+                <!-- Error State -->
+                <div id="error-state" class="hidden">
+                    <div class="max-w-md mx-auto text-center py-12">
+                        <span class="material-symbols-outlined text-6xl text-red-500 mb-4">error</span>
+                        <h2 class="text-xl font-bold mb-2">Unable to Load Bulletin</h2>
+                        <p class="text-text-secondary-dark mb-6" id="error-message">No bulletin available for this date and period.</p>
+                        <button id="retry-btn" class="px-6 py-3 bg-primary hover:bg-primary/80 text-slate-900 rounded-lg font-medium transition-colors">
+                            Try Again
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Articles Container -->
+                <div id="articles-container" class="space-y-0">
+                    <!-- Articles dynamically inserted -->
+                </div>
+
+                <!-- Load More -->
+                <div id="load-more-container" class="pt-8 hidden">
+                    <button id="load-more-btn" class="w-full flex items-center justify-center gap-2 px-6 py-4 rounded-lg bg-card-dark border border-border-dark text-sm font-medium hover:bg-slate-800 transition-colors text-text-secondary-dark">
+                        Load Earlier Stories
+                        <span class="material-symbols-outlined text-[18px]">expand_more</span>
+                    </button>
                 </div>
             </div>
-            
-            <!-- Skeleton Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="skeleton-card"></div>
-                <div class="skeleton-card"></div>
-                <div class="skeleton-card"></div>
-            </div>
-        </div>
-        
-        <!-- Error State -->
-        <div id="error-state" class="hidden">
-            <div class="max-w-md mx-auto text-center py-12">
-                <span class="material-symbols-outlined text-6xl text-red-500 mb-4">error</span>
-                <h2 class="text-xl font-bold mb-2">Unable to Load Bulletin</h2>
-                <p class="text-text-secondary-light dark:text-text-secondary-dark mb-6" id="error-message"></p>
-                <button 
-                    id="retry-btn" 
-                    class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors"
-                >
-                    Try Again
-                </button>
-            </div>
-        </div>
-        
-        <!-- Bulletin Cards Container -->
-        <div id="bulletin-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Cards will be dynamically inserted here -->
         </div>
     </main>
-    
+
     <!-- Footer -->
-    <footer class="border-t border-border-light dark:border-border-dark mt-12 py-8">
-        <div class="container mx-auto px-4 text-center text-sm text-text-secondary-light dark:text-text-secondary-dark">
+    <footer class="border-t border-border-dark mt-auto py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-text-secondary-dark">
             <p class="mb-2">
                 Powered by 
-                <a href="https://www.perplexity.ai/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
+                <a href="https://www.perplexity.ai/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">
                     Perplexity AI
-                </a> 
-                • News summarized with AI
+                </a> • News summarized with AI
             </p>
-            <p class="text-xs">
-                Updates automatically at 7 AM & 9 PM local time • 7-day history available
-            </p>
-            <p class="text-xs mt-2">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="hover:underline">
-                    View on GitHub
-                </a>
-            </p>
+            <p class="text-xs">Updates automatically at 7 AM & 9 PM local time • 7-day history available</p>
         </div>
     </footer>
-    
+
     <!-- Scripts -->
     <script src="js/theme-manager.js"></script>
     <script src="js/bulletin-loader.js"></script>
