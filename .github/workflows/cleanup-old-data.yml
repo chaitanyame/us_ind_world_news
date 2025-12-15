@@ -1,0 +1,69 @@
+name: Cleanup Old Data
+
+on:
+  schedule:
+    # Run daily at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run (print what would be deleted without deleting)'
+        required: false
+        type: boolean
+        default: false
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      
+      - name: Install dependencies
+        run: |
+          cd backend
+          pip install -r requirements.txt
+      
+      - name: Run cleanup script
+        run: |
+          cd backend
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            python scripts/cleanup_old_data.py --dry-run
+          else
+            python scripts/cleanup_old_data.py
+          fi
+      
+      - name: Commit and push changes
+        if: ${{ !inputs.dry_run }}
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add data/
+          
+          if git diff --staged --quiet; then
+            echo "No files to cleanup"
+            exit 0
+          fi
+          
+          git commit -m "chore: cleanup old bulletins (7-day retention)
+
+          - Removed bulletins older than 7 days
+          - Workflow run: ${{ github.run_id }}"
+          
+          git push origin main
+      
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "::error::Failed to cleanup old data"

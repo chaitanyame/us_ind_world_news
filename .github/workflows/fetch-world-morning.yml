@@ -1,0 +1,73 @@
+name: Fetch World Morning News
+
+on:
+  schedule:
+    # Run at 6:55 AM UTC (7 AM UTC is target time)
+    - cron: '55 6 * * *'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Date in YYYY-MM-DD format (optional, defaults to today)'
+        required: false
+        type: string
+
+jobs:
+  fetch-news:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      
+      - name: Install dependencies
+        run: |
+          cd backend
+          pip install -r requirements.txt
+      
+      - name: Fetch World morning bulletin
+        env:
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+        run: |
+          cd backend
+          python scripts/fetch_news.py \
+            --region world \
+            --period morning \
+            ${{ inputs.date && format('--date {0}', inputs.date) || '' }} \
+            --workflow-run-id ${{ github.run_id }}
+      
+      - name: Commit and push bulletin
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add data/world/
+          git add data/index.json
+          
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          
+          DATE=$(date -u +%Y-%m-%d)
+          
+          git commit -m "data: World morning bulletin for ${DATE}
+
+          - Fetched from Perplexity API (sonar model)
+          - Workflow run: ${{ github.run_id }}
+          - Articles count: $(jq '.bulletin.articles | length' data/world/${DATE}-morning.json || echo 'unknown')"
+          
+          git push origin main
+      
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "::error::Failed to fetch World morning bulletin"
