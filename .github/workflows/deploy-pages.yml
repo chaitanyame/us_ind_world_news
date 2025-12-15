@@ -7,6 +7,18 @@ on:
     paths:
       - 'frontend/**'
       - 'data/**'
+  workflow_run:
+    workflows:
+      - "Fetch USA Morning News"
+      - "Fetch USA Evening News"
+      - "Fetch India Morning News"
+      - "Fetch India Evening News"
+      - "Fetch World Morning News"
+      - "Fetch World Evening News"
+    types:
+      - completed
+    branches:
+      - main
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
@@ -24,9 +36,13 @@ jobs:
   # Build job
   build:
     runs-on: self-hosted
+    # Only run if triggered by push or manual dispatch, OR if workflow_run was successful
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: main
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
