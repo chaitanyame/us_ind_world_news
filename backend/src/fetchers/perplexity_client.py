@@ -127,7 +127,10 @@ class PerplexityClient:
                 messages=[
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt}
-                ]
+                ],
+                # Enable citations from Perplexity API
+                return_citations=True,
+                return_related_questions=False
             )
             
             logger.info(
@@ -197,11 +200,19 @@ class PerplexityClient:
         
         # Log citation info for debugging
         if data["citations"]:
-            logger.debug(
-                "Extracted citations from response",
+            logger.info(
+                "Extracted citations from Perplexity API response",
                 extra={
                     "citation_count": len(data["citations"]),
-                    "citation_types": [type(c).__name__ for c in data["citations"][:3]]
+                    "sample_citation": str(data["citations"][0])[:100] if data["citations"] else None
+                }
+            )
+        else:
+            logger.warning(
+                "No citations found in Perplexity API response",
+                extra={
+                    "has_message_citations": hasattr(response.choices[0].message, "citations") if response.choices else False,
+                    "has_response_citations": hasattr(response, "citations")
                 }
             )
         
