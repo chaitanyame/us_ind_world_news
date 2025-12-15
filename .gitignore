@@ -17,6 +17,9 @@ htmlcov/
 dist/
 build/
 
+# Local testing
+_site/
+
 # Environment variables
 .env
 .env.local
