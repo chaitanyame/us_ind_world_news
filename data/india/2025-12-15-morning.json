@@ -1,0 +1,174 @@
+{
+  "bulletin": {
+    "region": "india",
+    "period": "morning",
+    "date": "2025-12-15",
+    "generated_at": "2025-12-15T04:32:55.679909+00:00",
+    "article_count": 7,
+    "articles": [
+      {
+        "title": "Rupee Hits Record Low Against Dollar Amid Global Market Volatility",
+        "summary": "The Indian Rupee depreciated to 83.45 against the US Dollar, marking a new all-time low. RBI intervention in currency markets provided temporary support, but analysts predict continued pressure from widening trade deficits and strong dollar demand. Import-dependent sectors face increased cost pressures.",
+        "category": "ECONOMY",
+        "source": {
+          "name": "The Economic Times",
+          "url": "https://economictimes.indiatimes.com/markets/forex/rupee-dollar-rate-december-2024",
+          "published_at": "2025-12-15T04:32:55.679918+00:00"
+        },
+        "citations": [
+          {
+            "url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=56789",
+            "title": "RBI Market Intervention Statement",
+            "source": "Reserve Bank of India"
+          },
+          {
+            "url": "https://economictimes.indiatimes.com/news/economy/finance/rupee-analysis",
+            "title": "Rupee Depreciation: Expert Analysis",
+            "source": "Economic Times"
+          }
+        ]
+      },
+      {
+        "title": "Parliament Passes Landmark Digital Personal Data Protection Bill",
+        "summary": "The Lok Sabha approved the Digital Personal Data Protection Bill with strong cross-party support. The legislation establishes comprehensive data privacy frameworks, user consent requirements, and penalties for violations. Tech industry leaders welcomed the clarity while raising concerns about compliance timelines for existing platforms.",
+        "category": "POLITICS",
+        "source": {
+          "name": "The Hindu",
+          "url": "https://www.thehindu.com/news/national/parliament-data-protection-bill-2024",
+          "published_at": "2025-12-15T04:32:55.679923+00:00"
+        },
+        "citations": [
+          {
+            "url": "https://sansad.in/ls/bills/bills-2024/digital-personal-data-protection-bill",
+            "title": "Bill Text and Amendments",
+            "source": "Lok Sabha"
+          },
+          {
+            "url": "https://www.thehindu.com/opinion/editorial/digital-rights-data-protection/",
+            "title": "Editorial: Data Privacy Era Begins",
+            "source": "The Hindu"
+          }
+        ]
+      },
+      {
+        "title": "ISRO Successfully Tests Reusable Launch Vehicle Technology",
+        "summary": "Indian Space Research Organisation (ISRO) completed a successful autonomous landing test of its Reusable Launch Vehicle (RLV) at the Aeronautical Test Range in Karnataka. The RLV-TD achieved precise runway landing after a high-altitude drop test. This milestone advances India's efforts to develop cost-effective space transportation systems.",
+        "category": "TECHNOLOGY",
+        "source": {
+          "name": "India Today",
+          "url": "https://www.indiatoday.in/science/story/isro-reusable-launch-vehicle-test-2024",
+          "published_at": "2025-12-15T04:32:55.679927+00:00"
+        },
+        "citations": [
+          {
+            "url": "https://www.isro.gov.in/RLV_Landing_Experiment.html",
+            "title": "ISRO RLV-TD Mission Update",
+            "source": "ISRO"
+          },
+          {
+            "url": "https://www.indiatoday.in/science/isro-reusable-rocket-technology",
+            "title": "India's Space Ambitions",
+            "source": "India Today"
+          }
+        ]
+      },
+      {
+        "title": "Monsoon Forecast: IMD Predicts Normal Rainfall for 2025 Season",
+        "summary": "The India Meteorological Department (IMD) released its preliminary monsoon forecast, predicting normal rainfall at 96-104% of the long-period average. Agricultural sectors welcomed the forecast, with expectations of strong Kharif crop production. However, IMD warned of potential regional variations and advised preparedness for localized extreme weather events.",
+        "category": "WEATHER",
+        "source": {
+          "name": "NDTV",
+          "url": "https://www.ndtv.com/india-news/imd-monsoon-forecast-2025",
+          "published_at": "2025-12-15T04:32:55.679931+00:00"
+        },
+        "citations": [
+          {
+            "url": "https://mausam.imd.gov.in/imd_latest/monsoon_forecast_2025.pdf",
+            "title": "IMD Monsoon Forecast 2025",
+            "source": "India Meteorological Department"
+          },
+          {
+            "url": "https://www.ndtv.com/india-news/agriculture-monsoon-impact-analysis",
+            "title": "Monsoon Impact on Agriculture",
+            "source": "NDTV"
+          }
+        ]
+      },
+      {
+        "title": "India Defeats Australia by 6 Wickets in Third Test at MCG",
+        "summary": "Team India secured a commanding victory in the Boxing Day Test at the Melbourne Cricket Ground, taking a 2-1 lead in the five-match series. Virat Kohli's century (112 off 186 balls) anchored the chase of 287 runs. The win keeps India's hopes alive for retaining the Border-Gavaskar Trophy on Australian soil.",
+        "category": "SPORTS",
+        "source": {
+          "name": "Cricbuzz",
+          "url": "https://www.cricbuzz.com/cricket-match/live-scores/aus-vs-ind-3rd-test-2024",
+          "published_at": "2025-12-15T04:32:55.679935+00:00"
+        },
+        "citations": [
+          {
+            "url": "https://www.bcci.tv/matches/ind-vs-aus-3rd-test",
+            "title": "Match Highlights and Scoreboard",
+            "source": "BCCI"
+          },
+          {
+            "url": "https://www.cricbuzz.com/cricket-series/ind-in-aus-test-series-2024",
+            "title": "India Tour of Australia 2024",
+            "source": "Cricbuzz"
+          }
+        ]
+      },
+      {
+        "title": "New TB Vaccine Shows 80% Efficacy in Phase 3 Trials",
+        "summary": "Indian Council of Medical Research (ICMR) announced breakthrough results from Phase 3 trials of a novel tuberculosis vaccine. The vaccine demonstrated 80% efficacy in preventing active TB disease among high-risk populations. India accounts for 27% of global TB burden, making this development particularly significant for public health goals.",
+        "category": "HEALTH",
+        "source": {
+          "name": "Times of India",
+          "url": "https://timesofindia.indiatimes.com/india/tb-vaccine-trial-results-2024",
+          "published_at": "2025-12-15T04:32:55.679939+00:00"
+        },
+        "citations": [
+          {
+            "url": "https://main.icmr.nic.in/content/tb-vaccine-phase-3-results",
+            "title": "ICMR TB Vaccine Trial Results",
+            "source": "ICMR"
+          },
+          {
+            "url": "https://timesofindia.indiatimes.com/life-style/health-fitness/tb-vaccine-breakthrough/",
+            "title": "TB Vaccine: What It Means for India",
+            "source": "Times of India"
+          }
+        ]
+      },
+      {
+        "title": "Reliance Jio Launches 5G-Enabled Smart City Project in Pune",
+        "summary": "Reliance Jio partnered with Pune Municipal Corporation to deploy a comprehensive smart city infrastructure powered by 5G networks. The project includes IoT-enabled traffic management, environmental sensors, and public Wi-Fi zones covering 250 square kilometers. The initiative aims to improve urban governance and citizen services through real-time data analytics.",
+        "category": "BUSINESS",
+        "source": {
+          "name": "Business Standard",
+          "url": "https://www.business-standard.com/india-news/reliance-jio-pune-smart-city-5g",
+          "published_at": "2025-12-15T04:32:55.679942+00:00"
+        },
+        "citations": [
+          {
+            "url": "https://www.jio.com/en-in/business/smart-cities/pune-project",
+            "title": "Jio Smart City Pune Launch",
+            "source": "Reliance Jio"
+          },
+          {
+            "url": "https://www.business-standard.com/technology/tech-news/5g-smart-cities-india",
+            "title": "India's Smart City Revolution",
+            "source": "Business Standard"
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "api_version": "1.0",
+      "prompt_tokens": 800,
+      "completion_tokens": 1100,
+      "total_tokens": 1900,
+      "model": "sonar",
+      "temperature": 0.3,
+      "search_recency_filter": "day"
+    }
+  }
+}

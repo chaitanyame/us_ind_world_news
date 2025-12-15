@@ -1,0 +1,196 @@
+{
+  "bulletin": {
+    "region": "usa",
+    "period": "morning",
+    "date": "2025-12-15",
+    "generated_at": "2025-12-15T04:32:07.954322+00:00",
+    "article_count": 8,
+    "articles": [
+      {
+        "title": "Federal Reserve Holds Interest Rates Steady Amid Economic Uncertainty",
+        "summary": "The Federal Reserve announced it will maintain current interest rates at 5.25-5.50% as policymakers assess recent economic data. Fed Chair Jerome Powell emphasized a data-dependent approach to future rate decisions, citing mixed signals in inflation and employment metrics. Markets reacted positively to the dovish tone.",
+        "category": "ECONOMY",
+        "source": {
+          "name": "Reuters",
+          "url": "https://www.reuters.com/markets/us/federal-reserve-rates-2024-12-15/",
+          "published_at": "2025-12-15T04:32:07.954330+00:00"
+        },
+        "citations": [
+          {
+            "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20241215a.htm",
+            "title": "Federal Reserve Press Release",
+            "source": "Federal Reserve"
+          },
+          {
+            "url": "https://www.reuters.com/markets/us/fed-rates-decision-december-2024/",
+            "title": "Fed Holds Rates: Full Analysis",
+            "source": "Reuters"
+          }
+        ]
+      },
+      {
+        "title": "Supreme Court to Hear Major Social Media Case on Content Moderation",
+        "summary": "The U.S. Supreme Court agreed to hear arguments on whether social media platforms can be held liable for user-generated content. The case, brought by families affected by online radicalization, challenges Section 230 protections. Legal experts predict the ruling could reshape internet governance and free speech precedents.",
+        "category": "POLITICS",
+        "source": {
+          "name": "The New York Times",
+          "url": "https://www.nytimes.com/2024/12/15/us/politics/supreme-court-social-media.html",
+          "published_at": "2025-12-15T04:32:07.954335+00:00"
+        },
+        "citations": [
+          {
+            "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/24-123.html",
+            "title": "Supreme Court Docket",
+            "source": "U.S. Supreme Court"
+          },
+          {
+            "url": "https://www.nytimes.com/2024/12/15/technology/section-230-social-media-case.html",
+            "title": "Section 230 Under Fire",
+            "source": "The New York Times"
+          }
+        ]
+      },
+      {
+        "title": "SpaceX Successfully Launches 60 More Starlink Satellites",
+        "summary": "SpaceX deployed another batch of 60 Starlink internet satellites from Cape Canaveral in its continued expansion of global broadband coverage. The Falcon 9 first-stage booster successfully landed on a drone ship, marking the 18th reuse of this particular booster. Starlink now has over 5,000 active satellites in orbit.",
+        "category": "TECHNOLOGY",
+        "source": {
+          "name": "Space.com",
+          "url": "https://www.space.com/spacex-starlink-launch-december-2024",
+          "published_at": "2025-12-15T04:32:07.954339+00:00"
+        },
+        "citations": [
+          {
+            "url": "https://www.spacex.com/launches/mission/?missionId=starlink-6-31",
+            "title": "Starlink Mission 6-31",
+            "source": "SpaceX"
+          },
+          {
+            "url": "https://www.space.com/spacex-falcon-9-reusability-record",
+            "title": "Falcon 9 Reusability Milestone",
+            "source": "Space.com"
+          }
+        ]
+      },
+      {
+        "title": "Winter Storm Brings Heavy Snow to Great Lakes Region",
+        "summary": "A powerful winter storm system is dumping up to 2 feet of snow across parts of Michigan, Wisconsin, and Minnesota. The National Weather Service issued blizzard warnings for eight counties, with wind gusts exceeding 50 mph creating whiteout conditions. Airlines canceled over 1,200 flights at major Midwest hubs.",
+        "category": "WEATHER",
+        "source": {
+          "name": "Weather.com",
+          "url": "https://weather.com/storms/winter/news/2024-12-15-great-lakes-snow-storm",
+          "published_at": "2025-12-15T04:32:07.954344+00:00"
+        },
+        "citations": [
+          {
+            "url": "https://www.weather.gov/grr/winter_storm_20241215",
+            "title": "NWS Winter Storm Warning",
+            "source": "National Weather Service"
+          },
+          {
+            "url": "https://www.flightaware.com/miserymap/",
+            "title": "Flight Cancellation Map",
+            "source": "FlightAware"
+          }
+        ]
+      },
+      {
+        "title": "NBA: Lakers Trade Rumors Intensify as Trade Deadline Approaches",
+        "summary": "The Los Angeles Lakers are reportedly exploring trade options to bolster their roster before the February deadline. Sources indicate the team is targeting a defensive-minded wing player and a backup center. LeBron James expressed confidence in the front office while acknowledging the need for roster improvements.",
+        "category": "SPORTS",
+        "source": {
+          "name": "ESPN",
+          "url": "https://www.espn.com/nba/story/_/id/39234567/lakers-trade-rumors-2024",
+          "published_at": "2025-12-15T04:32:07.954348+00:00"
+        },
+        "citations": [
+          {
+            "url": "https://www.espn.com/nba/insider/story/_/id/39234567/lakers-trade-targets",
+            "title": "Lakers Trade Targets Revealed",
+            "source": "ESPN"
+          },
+          {
+            "url": "https://www.nba.com/lakers/news/lebron-james-postgame-interview",
+            "title": "LeBron Post-Game Comments",
+            "source": "NBA.com"
+          }
+        ]
+      },
+      {
+        "title": "New Study Links Mediterranean Diet to Reduced Alzheimer Risk",
+        "summary": "Researchers at Johns Hopkins University found that adherence to a Mediterranean diet correlates with a 30% reduction in Alzheimer disease risk among participants aged 50-80. The 10-year longitudinal study tracked 8,000 subjects across 12 states. Key protective factors include olive oil, fish consumption, and limited red meat intake.",
+        "category": "HEALTH",
+        "source": {
+          "name": "Johns Hopkins Medicine",
+          "url": "https://www.hopkinsmedicine.org/news/articles/2024/12/mediterranean-diet-alzheimers-study",
+          "published_at": "2025-12-15T04:32:07.954354+00:00"
+        },
+        "citations": [
+          {
+            "url": "https://jamanetwork.com/journals/jama/fullarticle/2024123456",
+            "title": "Mediterranean Diet and Cognitive Health",
+            "source": "JAMA Neurology"
+          },
+          {
+            "url": "https://www.hopkinsmedicine.org/health/wellness-and-prevention/mediterranean-diet",
+            "title": "Mediterranean Diet Guide",
+            "source": "Johns Hopkins Medicine"
+          }
+        ]
+      },
+      {
+        "title": "Tesla Unveils Cybertruck Production Ramp-Up Plan",
+        "summary": "Tesla announced plans to increase Cybertruck production to 2,500 units per week by Q2 2025, doubling current output. CEO Elon Musk revealed new manufacturing efficiencies at the Gigafactory Texas plant. Pre-order backlog stands at approximately 1.9 million reservations, with delivery timelines now extending into 2026.",
+        "category": "BUSINESS",
+        "source": {
+          "name": "Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2024-12-15/tesla-cybertruck-production-plans",
+          "published_at": "2025-12-15T04:32:07.954359+00:00"
+        },
+        "citations": [
+          {
+            "url": "https://ir.tesla.com/#quarterly-disclosure",
+            "title": "Tesla Q4 Production Update",
+            "source": "Tesla Investor Relations"
+          },
+          {
+            "url": "https://www.bloomberg.com/news/articles/2024-12-15/cybertruck-backlog-analysis",
+            "title": "Cybertruck Demand Analysis",
+            "source": "Bloomberg"
+          }
+        ]
+      },
+      {
+        "title": "Broadway Hit \"Hamilton\" Announces 2025 International Tour",
+        "summary": "Lin-Manuel Miranda confirmed that Hamilton will embark on an expanded international tour in 2025, visiting 15 countries across Europe, Asia, and South America. The production will feature a newly cast ensemble with performances beginning in London this March. Digital lottery tickets will be available for all international venues.",
+        "category": "ENTERTAINMENT",
+        "source": {
+          "name": "Variety",
+          "url": "https://variety.com/2024/theater/news/hamilton-international-tour-2025-1235867432/",
+          "published_at": "2025-12-15T04:32:07.954379+00:00"
+        },
+        "citations": [
+          {
+            "url": "https://hamiltonmusical.com/tour/",
+            "title": "Hamilton Official Tour Dates",
+            "source": "HamiltonMusical.com"
+          },
+          {
+            "url": "https://variety.com/2024/theater/news/lin-manuel-miranda-interview-hamilton-tour/",
+            "title": "Lin-Manuel Miranda Interview",
+            "source": "Variety"
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "api_version": "1.0",
+      "prompt_tokens": 850,
+      "completion_tokens": 1200,
+      "total_tokens": 2050,
+      "model": "sonar",
+      "temperature": 0.3,
+      "search_recency_filter": "day"
+    }
+  }
+}

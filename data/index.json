@@ -1,0 +1,19 @@
+{
+  "usa": {
+    "2025-12-15": {
+      "morning": {
+        "filepath": "usa/2025-12-15-morning.json",
+        "updated_at": "2025-12-15T04:32:55.684633+00:00"
+      }
+    }
+  },
+  "india": {
+    "2025-12-15": {
+      "morning": {
+        "filepath": "india/2025-12-15-morning.json",
+        "updated_at": "2025-12-15T04:32:55.684648+00:00"
+      }
+    }
+  },
+  "world": {}
+}
