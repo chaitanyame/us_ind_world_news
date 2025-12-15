@@ -53,17 +53,26 @@ jobs:
           git add data/index.json
           
           if git diff --staged --quiet; then
-            echo "No changes to commit"
+            echo "No changes to commit (data unchanged)"
             exit 0
           fi
           
           DATE=$(date -u +%Y-%m-%d)
+          FILEPATH="data/india/${DATE}-morning.json"
           
-          git commit -m "data: India morning bulletin for ${DATE}
+          # Check if file already exists in git (tracked) to determine action
+          if git ls-files --error-unmatch "${FILEPATH}" >/dev/null 2>&1; then
+            ACTION="update"
+          else
+            ACTION="add"
+          fi
+          
+          git commit -m "data(${ACTION}): India morning bulletin for ${DATE}
 
           - Fetched from Perplexity API (sonar model)
           - Workflow run: ${{ github.run_id }}
-          - Articles count: $(jq '.bulletin.articles | length' data/india/${DATE}-morning.json || echo 'unknown')"
+          - Articles count: $(jq '.bulletin.articles | length' "${FILEPATH}" 2>/dev/null || echo 'unknown')
+          - Action: ${ACTION} (replaces previous data if re-run)"
           
           git push origin main
       
