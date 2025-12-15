@@ -120,6 +120,7 @@ class PerplexityClient:
         
         try:
             # Make API call to Perplexity
+            # Note: Citations are requested in the prompt and will be in the JSON response
             response = self.client.chat.completions.create(
                 model=self.model,
                 temperature=self.temperature,
@@ -127,10 +128,7 @@ class PerplexityClient:
                 messages=[
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt}
-                ],
-                # Enable citations from Perplexity API
-                return_citations=True,
-                return_related_questions=False
+                ]
             )
             
             logger.info(
