@@ -1,5 +1,5 @@
 """
-Backend test package for Global News Brief.
+Backend test package for NRI News Brief.
 
 This package contains unit and integration tests for:
 - Pydantic data models (Bulletin, Article, Source, Citation, Metadata, LLMUsage)

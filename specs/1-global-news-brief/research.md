@@ -1,4 +1,4 @@
-# Research Document: Global News Brief
+# Research Document: NRI News Brief
 
 **Feature**: 1-global-news-brief  
 **Created**: 2025-12-15  

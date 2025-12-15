@@ -1,4 +1,4 @@
-# TOON Format Research for Global News Brief Platform
+# TOON Format Research for NRI News Brief Platform
 
 **Research Date:** December 15, 2025  
 **Repository:** [toon-format/toon](https://github.com/toon-format/toon)  
@@ -431,7 +431,7 @@ toon encode input.json --stats
 - ⚠️ **Python:** Encoding only, development stage, limited features
 - 🚧 **Other languages:** Most implementations are in development
 
-**Recommendation for Global News Brief:**
+**Recommendation for NRI News Brief:**
 - **Backend (Python):** Use `toon-python` for encoding only; wait for decode support or implement custom parser
 - **Frontend (JavaScript):** Use `@toon-format/toon` - fully stable and production-ready
 
@@ -439,7 +439,7 @@ toon encode input.json --stats
 
 ## 6. Recommendation
 
-### Should We Use TOON Format for Global News Brief?
+### Should We Use TOON Format for NRI News Brief?
 
 **Verdict: ⚠️ CONDITIONAL YES - with caveats**
 

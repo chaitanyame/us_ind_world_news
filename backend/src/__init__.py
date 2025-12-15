@@ -1,2 +1,2 @@
-"""Global News Brief backend package."""
+"""NRI News Brief backend package."""
 __version__ = "1.0.0"

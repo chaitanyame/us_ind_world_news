@@ -1,17 +1,17 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
 
-test.describe('Global News Brief Dashboard', () => {
+test.describe('NRI News Brief Dashboard', () => {
     test.beforeEach(async ({ page }) => {
         await page.goto('/');
     });
 
     test('should load the dashboard with header', async ({ page }) => {
         // Check page title
-        await expect(page).toHaveTitle(/Global News Brief/);
+        await expect(page).toHaveTitle(/NRI News Brief/);
         
         // Check header elements
-        await expect(page.locator('h1:has-text("Global News Brief")')).toBeVisible();
+        await expect(page.locator('h1:has-text("NRI News Brief")')).toBeVisible();
         await expect(page.locator('input[placeholder*="Search"]')).toBeVisible();
     });
 

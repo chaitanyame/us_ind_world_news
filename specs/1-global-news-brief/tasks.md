@@ -1,9 +1,9 @@
 ---
-description: "Task breakdown for Global News Brief implementation"
+description: "Task breakdown for NRI News Brief implementation"
 created: 2025-12-15
 ---
 
-# Tasks: Global News Brief
+# Tasks: NRI News Brief
 
 **Feature Branch**: `1-global-news-brief`  
 **Input Documents**: [plan.md](plan.md), [spec.md](spec.md), [data-model.md](data-model.md), [contracts/](contracts/), [research.md](research.md), [quickstart.md](quickstart.md)
@@ -172,7 +172,7 @@ created: 2025-12-15
 - [ ] T054c [P] Create GitHub Actions test workflow at `/workspaces/us_ind_world_news/.github/workflows/test-backend.yml` (run pytest with coverage on PRs, fail if coverage <80%, upload coverage report)
 - [ ] T054d [P] Create GitHub Actions test workflow at `/workspaces/us_ind_world_news/.github/workflows/test-frontend.yml` (run Playwright tests on PRs, test all browsers, upload test artifacts)
 - [ ] T055 Add comprehensive error messages in `/workspaces/us_ind_world_news/frontend/js/app.js` (network timeout: "Connection slow - retrying...", 404: "Bulletin not published yet", 500: "Service temporarily unavailable")
-- [ ] T056 [P] Add meta tags in `/workspaces/us_ind_world_news/frontend/index.html` for SEO (title: "Global News Brief", description: "AI-summarized news from India, USA, and World", og:image, viewport)
+- [ ] T056 [P] Add meta tags in `/workspaces/us_ind_world_news/frontend/index.html` for SEO (title: "NRI News Brief", description: "AI-summarized news from India, USA, and World", og:image, viewport)
 - [ ] T057 [P] Add favicon and Apple touch icon in `/workspaces/us_ind_world_news/frontend/assets/` (newspaper icon, 32×32 and 180×180 sizes)
 - [ ] T058 Add accessibility attributes in `/workspaces/us_ind_world_news/frontend/index.html` (ARIA labels for region buttons, alt text for icons, role attributes for interactive elements)
 - [ ] T059 Optimize CSS in `/workspaces/us_ind_world_news/frontend/css/styles.css` (remove unused styles, minify for production, ensure <10KB file size)

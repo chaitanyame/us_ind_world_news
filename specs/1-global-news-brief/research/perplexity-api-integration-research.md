@@ -1,4 +1,4 @@
-# Perplexity API Integration Research for Global News Brief Platform
+# Perplexity API Integration Research for NRI News Brief Platform
 
 **Research Date**: December 15, 2025  
 **Target Use Case**: Daily news brief generation (6 requests/day) with categorization (politics, tech, business, sports) and citations
@@ -611,7 +611,7 @@ for story in brief.stories:
 
 ## Summary & Recommendations
 
-### For Global News Brief Platform (6 requests/day):
+### For NRI News Brief Platform (6 requests/day):
 
 1. **Model**: Use `sonar` (not `sonar-pro`) for cost optimization
 2. **Parameters**: 

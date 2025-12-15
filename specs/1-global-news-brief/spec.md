@@ -1,9 +1,9 @@
-# Feature Specification: Global News Brief
+# Feature Specification: NRI News Brief
 
 **Feature Branch**: `1-global-news-brief`  
 **Created**: 2025-12-14  
 **Status**: Draft  
-**Input**: User description: "Build 'Global News Brief' - a multi-region news aggregation platform with AI-summarized updates from India, USA, and World sources"
+**Input**: User description: "Build 'NRI News Brief' - a multi-region news aggregation platform with AI-summarized updates from India, USA, and World sources"
 
 ## User Scenarios & Testing *(mandatory)*
 
@@ -128,7 +128,7 @@ As a platform operator, I want news bulletins to be automatically fetched, summa
 
 ## Success Criteria *(mandatory)*
 
-The Global News Brief platform is successful when:
+The NRI News Brief platform is successful when:
 
 1. **User Engagement**: Users can consume a complete news bulletin (all regions) in under 2 minutes per period (morning or evening)
 2. **Performance**: Page loads in under 3 seconds on 3G connections with Lighthouse performance score >90

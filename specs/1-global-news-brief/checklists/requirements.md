@@ -1,4 +1,4 @@
-# Specification Quality Checklist: Global News Brief
+# Specification Quality Checklist: NRI News Brief
 
 **Purpose**: Validate specification completeness and quality before proceeding to planning  
 **Created**: 2025-12-14  

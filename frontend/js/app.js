@@ -1,5 +1,5 @@
 /**
- * Global News Brief Dashboard - Main Application
+ * NRI News Brief Dashboard - Main Application
  * Handles UI state, bulletin rendering, and user interactions
  */
 

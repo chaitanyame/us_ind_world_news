@@ -1,4 +1,4 @@
-# Global News Brief
+# NRI News Brief
 
 **AI-powered regional news aggregation platform with automated twice-daily bulletins**
 
@@ -8,7 +8,7 @@
 
 ## 📋 Overview
 
-Global News Brief delivers curated news summaries for USA, India, and World regions, refreshed every morning (7 AM) and evening (9 PM) local time. Each bulletin contains 5-10 top stories with AI-generated summaries, source citations, and category tagging.
+NRI News Brief delivers curated news summaries for USA, India, and World regions, refreshed every morning (7 AM) and evening (9 PM) local time. Each bulletin contains 5-10 top stories with AI-generated summaries, source citations, and category tagging.
 
 **Live Demo**: [GitHub Pages](https://yourusername.github.io/us_ind_world_news/) _(configure after deployment)_
 
@@ -431,6 +431,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Built with ❤️ by the Global News Brief Team**
+**Built with ❤️ by the NRI News Brief Team**
 
 _Last Updated: 2025-12-15_

@@ -1,5 +1,5 @@
 """
-Pydantic models for Global News Brief data structures.
+Pydantic models for NRI News Brief data structures.
 
 This module defines the data models for bulletins, articles, and metadata
 with comprehensive validation rules.

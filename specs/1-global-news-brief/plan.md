@@ -1,4 +1,4 @@
-# Implementation Plan: Global News Brief
+# Implementation Plan: NRI News Brief
 
 **Branch**: `1-global-news-brief` | **Date**: 2025-12-15 | **Spec**: [spec.md](spec.md)
 **Input**: Feature specification from `/specs/1-global-news-brief/spec.md`

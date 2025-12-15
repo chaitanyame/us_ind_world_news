@@ -1,10 +1,10 @@
-# Data Model: Global News Brief
+# Data Model: NRI News Brief
 
 **Feature**: 1-global-news-brief  
 **Created**: 2025-12-15  
 **Purpose**: Define JSON schema for bulletins, articles, and metadata
 
-This document defines the data structures used throughout the Global News Brief platform.
+This document defines the data structures used throughout the NRI News Brief platform.
 
 ---
 

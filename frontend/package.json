@@ -1,7 +1,7 @@
 {
-  "name": "global-news-brief-frontend",
+  "name": "nri-news-brief-frontend",
   "version": "1.0.0",
-  "description": "Frontend testing for Global News Brief platform",
+  "description": "Frontend testing for NRI News Brief platform",
   "scripts": {
     "test": "playwright test",
     "test:headed": "playwright test --headed",

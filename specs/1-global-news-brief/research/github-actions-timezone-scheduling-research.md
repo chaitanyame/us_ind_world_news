@@ -1,7 +1,7 @@
 # GitHub Actions Timezone Scheduling Research
 
 **Research Date**: December 15, 2025  
-**Project**: Global News Brief Platform  
+**Project**: NRI News Brief Platform  
 **Purpose**: Production-ready scheduling for 6 daily news workflows across EST, IST, and UTC timezones
 
 ---
@@ -125,7 +125,7 @@ Since GitHub Actions cron schedules run **exclusively in UTC**, all local times 
 - Run at both potential times, determine correct one dynamically
 - Most reliable but requires timezone library (e.g., `pytz`, `tzdata`)
 
-### Recommended Approach for Global News Brief
+### Recommended Approach for NRI News Brief
 
 Given requirements for "accurate local time delivery" and "95% reliability":
 
@@ -411,7 +411,7 @@ For production workloads with multiple workflows:
 #### Prevent Simultaneous Runs
 
 ```yaml
-name: Global News Brief - USA Morning
+name: NRI News Brief - USA Morning
 
 on:
   schedule:
@@ -624,7 +624,7 @@ steps:
 #### Manual Workflow Dispatch (Fallback)
 
 ```yaml
-name: Global News Brief - USA Morning
+name: NRI News Brief - USA Morning
 
 on:
   schedule:
@@ -645,7 +645,7 @@ on:
 
 ```yaml
 # .github/workflows/news-usa-morning.yml
-name: Global News Brief - USA Morning
+name: NRI News Brief - USA Morning
 on:
   schedule:
     # EST (Standard Time): 7:00 AM EST = 12:00 UTC
@@ -696,7 +696,7 @@ jobs:
 ---
 
 # .github/workflows/news-usa-evening.yml
-name: Global News Brief - USA Evening
+name: NRI News Brief - USA Evening
 on:
   schedule:
     # EST: 9:00 PM EST = 02:00 UTC (next day)
@@ -719,7 +719,7 @@ jobs:
 ---
 
 # .github/workflows/news-india-morning.yml
-name: Global News Brief - India Morning
+name: NRI News Brief - India Morning
 on:
   schedule:
     # IST: 7:00 AM IST = 01:30 UTC
@@ -744,7 +744,7 @@ jobs:
 ---
 
 # .github/workflows/news-india-evening.yml
-name: Global News Brief - India Evening
+name: NRI News Brief - India Evening
 on:
   schedule:
     # IST: 9:00 PM IST = 15:30 UTC
@@ -769,7 +769,7 @@ jobs:
 ---
 
 # .github/workflows/news-world-morning.yml
-name: Global News Brief - World Morning
+name: NRI News Brief - World Morning
 on:
   schedule:
     # UTC: 7:00 AM UTC
@@ -794,7 +794,7 @@ jobs:
 ---
 
 # .github/workflows/news-world-evening.yml
-name: Global News Brief - World Evening
+name: NRI News Brief - World Evening
 on:
   schedule:
     # UTC: 9:00 PM UTC = 21:00 UTC

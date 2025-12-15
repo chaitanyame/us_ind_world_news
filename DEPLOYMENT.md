@@ -1,4 +1,4 @@
-# Deployment Guide: Global News Brief Platform
+# Deployment Guide: NRI News Brief Platform
 
 **Status**: ✅ Code pushed to GitHub  
 **Branch**: `1-global-news-brief`  
@@ -20,11 +20,11 @@
 1. Go to: https://github.com/chaitanyame/us_ind_world_news/pulls
 2. Click: **"New pull request"**
 3. Base: `main` ← Compare: `1-global-news-brief`
-4. Title: `feat: implement Global News Brief MVP (Phase 1-4)`
+4. Title: `feat: implement NRI News Brief MVP (Phase 1-4)`
 5. Description:
    ```markdown
    ## Summary
-   Complete implementation of Global News Brief platform with automated news fetching.
+   Complete implementation of NRI News Brief platform with automated news fetching.
    
    ## Features Delivered
    - ✅ Backend: Python 3.11 + Pydantic models + Perplexity API integration

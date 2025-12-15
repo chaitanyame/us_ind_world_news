@@ -1,10 +1,10 @@
-# Quickstart Guide: Global News Brief
+# Quickstart Guide: NRI News Brief
 
 **Feature**: 1-global-news-brief  
 **Last Updated**: 2025-12-15  
 **Purpose**: Developer onboarding and local development setup
 
-This guide will help you set up the Global News Brief platform for local development and testing.
+This guide will help you set up the NRI News Brief platform for local development and testing.
 
 ---
 
